@@ -27,7 +27,7 @@ function Header() {
         </div>
         
         {/* ================== RIGHT SIDE CONTENT ====================== */}
-        <div className=' w-full max-w-md'>
+        <div className=' w-full max-w-xl'>
             <img src={assets.header_img} alt="" />
         </div>
     </div>
