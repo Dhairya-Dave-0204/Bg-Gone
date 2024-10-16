@@ -1,8 +1,12 @@
 import React from 'react'
+import { Header, StepCard } from '../components/component_index';
 
 function Home() {
   return (
-    <div>Home</div>
+    <div>
+      <Header/>
+      <StepCard/>
+    </div>
   )
 }
 
