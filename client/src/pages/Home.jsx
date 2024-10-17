@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, StepCard, BgSlider } from '../components/component_index';
+import { Header, StepCard, BgSlider, Testimonial, Upload } from '../components/component_index';
 
 function Home() {
   return (
@@ -7,6 +7,8 @@ function Home() {
       <Header/>
       <StepCard/>
       <BgSlider />
+      <Testimonial />
+      <Upload />
     </div>
   )
 }
