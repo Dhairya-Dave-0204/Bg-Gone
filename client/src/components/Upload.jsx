@@ -1,5 +1,6 @@
 import React from 'react'
 import { assets } from '../assets/assets';
+import { UploadBtn } from './component_index';
 
 function Upload() {
   return (
@@ -9,15 +10,9 @@ function Upload() {
       </h1>
 
       <div className=' text-center mb-24'>
-        <input type="file" name="upload2" id="upload2" hidden />
-        <label
-          htmlFor="upload2"
-          className="inline-flex gap-3 px-8 py-3.5 rounded-full cursor-pointer bg-gradient-to-r from-violet-600 to-fuchsia-500 m-auto transition-all duration-600 hover:scale-105"
-        >
-          <img src={assets.upload_btn_icon} alt="" width={20} />
-          <p className=" text-sm text-white">Upload your image</p>
-        </label>
+        <UploadBtn />
       </div>
+      
     </div>
   );
 }

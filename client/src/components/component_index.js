@@ -5,6 +5,8 @@ import BgSlider from './BgSlider';
 import Testimonial from './Testimonial'
 import Upload from './Upload'
 import Footer from './Footer'
+import UploadBtn from './UploadBtn'
+import PriceCards from './PriceCards';
 
 export {
     Navbar,
@@ -13,5 +15,7 @@ export {
     BgSlider,
     Testimonial,
     Upload,
-    Footer
+    Footer,
+    UploadBtn,
+    PriceCards
 }

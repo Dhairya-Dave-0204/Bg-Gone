@@ -9,7 +9,7 @@ function StepCard() {
       </h1>
 
       <div className="flex items-start justify-center flex-wrap gap-4 mt-16 xl:mt-24">
-        <div className="flex items-start gap-4 bg-white border drop-shadow-md p-7 pb-10 rounded-sm hover:scale-105 transition-all duration-500">
+        <div className="flex items-start gap-4 bg-white border drop-shadow-md p-7 pb-10 rounded-sm hover:scale-105 transition-all duration-700">
           <img src={assets.upload_icon} alt=""  className=' max-w-9'/>
           <div>
             <p className=' text-xl font-medium'>Upload image</p>
@@ -19,7 +19,7 @@ function StepCard() {
           </div>
         </div>
         
-        <div className="flex items-start gap-4 bg-white border drop-shadow-md p-7 pb-10 rounded-sm hover:scale-105 transition-all duration-500">
+        <div className="flex items-start gap-4 bg-white border drop-shadow-md p-7 pb-10 rounded-sm hover:scale-105 transition-all duration-700">
           <img src={assets.remove_bg_icon} alt=""  className=' max-w-9'/>
           <div>
             <p className=' text-xl font-medium'>Remove bacckground</p>
@@ -29,7 +29,7 @@ function StepCard() {
           </div>
         </div>
         
-        <div className="flex items-start gap-4 bg-white border drop-shadow-md p-7 pb-10 rounded-sm hover:scale-105 transition-all duration-500">
+        <div className="flex items-start gap-4 bg-white border drop-shadow-md p-7 pb-10 rounded-sm hover:scale-105 transition-all duration-700">
           <img src={assets.download_icon} alt=""  className=' max-w-9'/>
           <div>
             <p className=' text-xl font-medium'>Download image</p>

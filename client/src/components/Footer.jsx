@@ -9,9 +9,9 @@ function Footer() {
             Copyright @Bg Gone | All rights reserved.
         </p>
         <div className='flex gap-1'>
-            <img src= {assets.facebook_icon} alt="" width={40}/>
-            <img src= {assets.twitter_icon} alt="" width={40}/>
-            <img src= {assets.google_plus_icon} alt="" width={40}/>
+            <a href="https://www.facebook.com/"><img src= {assets.facebook_icon} alt="" width={40}/></a>
+            <a href="https://x.com/home?lang=en"><img src= {assets.twitter_icon} alt="" width={40}/></a>
+            <a href="https://www.google.co.in/"><img src= {assets.google_plus_icon} alt="" width={40}/></a>
         </div>
     </div>
   )
