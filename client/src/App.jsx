@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom';
 import { Home, BuyCredit, Result } from "./pages/page_index";
-import { Navbar } from './components/component_index';
+import { Navbar, Footer } from './components/component_index';
 
 function App() {
 
@@ -14,6 +14,7 @@ function App() {
         <Route path="/buy" element={<BuyCredit />} />
         <Route path="/result" element={<Result />} />
       </Routes>
+      <Footer />
     </div>
   )
 }

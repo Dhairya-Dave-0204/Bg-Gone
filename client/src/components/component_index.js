@@ -4,6 +4,7 @@ import StepCard from './StepCard';
 import BgSlider from './BgSlider';
 import Testimonial from './Testimonial'
 import Upload from './Upload'
+import Footer from './Footer'
 
 export {
     Navbar,
@@ -11,5 +12,6 @@ export {
     StepCard,
     BgSlider,
     Testimonial,
-    Upload
+    Upload,
+    Footer
 }
