@@ -1,11 +1,21 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import { assets } from "../assets/assets";
 import { Link } from "react-router-dom";
 import { useClerk, UserButton, useUser } from "@clerk/clerk-react";
+import { AppContext } from "../context/AppContext";
 
 function Navbar() {
   const { openSignIn } = useClerk();
   const { isSignedIn, user } = useUser();
+
+  const { credit, loadCreditsData } = useContext(AppContext)
+
+  useEffect(() => {
+    if (isSignedIn) {
+      loadCreditsData()
+    }
+  }, [isSignedIn])
+  
 
   return (
     <div className=" flex items-center justify-between mx-4 py-3 lg:mx-44">
@@ -15,7 +25,14 @@ function Navbar() {
       </Link>
 
       {isSignedIn ? (
-        <div>
+        <div className="flex items-center gap-2 sm:gap-3">
+          <button className="flex items-center gap-2 bg-blue-100 px-4 sm:px-7 py-1.5 sm:py-2.5 rounded-full hover:scale-105 transition-all duration-700">
+            <img src={assets.credit_icon} alt="" className="w-5"/>
+            <p className="text-xs sm:text-sm font-medium text-gray-600">Credits: {credit}</p>
+          </button>
+
+          <p className="max-sm:hidden text-gray-600 hover:underline underline-offset-2">Hi, {user.fullName}</p>
+
           <UserButton />
         </div>
       ) : (
