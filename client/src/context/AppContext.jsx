@@ -39,7 +39,7 @@ const AppContextProvider = (props) => {
   const removeBg = async (image) => {
     try {
         if (!isSignedIn) {
-            return openSignIn()
+          return openSignIn()
         }
         setImage(image)
         setResultImage(false)
