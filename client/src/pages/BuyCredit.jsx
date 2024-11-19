@@ -1,6 +1,6 @@
 import React from 'react'
-import { assets, plans } from '../assets/assets'
 import { PriceCards } from '../components/component_index'
+
 
 function BuyCredit() {
   return (
