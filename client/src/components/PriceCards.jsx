@@ -24,7 +24,7 @@ function PriceCards() {
       handler: async (response) => {
         const token = await getToken()
         try {
-          const { data } = await axios.post(backendUrl + "api/user/verify-razor", response, {headers: {token}})
+          const { data } = await axios.post(backendUrl + "/api/user/verify-razor", response, {headers: {token}})
           if(data.success){
             loadCreditsData()
             toast.success("Payment successful and Credits added")
@@ -44,7 +44,7 @@ function PriceCards() {
     try {
       const token = await getToken()
 
-      const { data } = await axios.post(backendUrl + "api/user/pay-razor", {planId}, {headers: {token}})
+      const { data } = await axios.post(backendUrl + "/api/user/pay-razor", {planId}, {headers: {token}})
       if (data.success) {
         initPay(data.order)
       }
