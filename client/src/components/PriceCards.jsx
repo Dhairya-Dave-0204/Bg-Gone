@@ -22,7 +22,18 @@ function PriceCards() {
       order_id: order.id,
       receipt: order.receipt,
       handler: async (response) => {
-        console.log(response);
+        const token = await getToken()
+        try {
+          const { data } = await axios.post(backendUrl + "api/user/verify-razor", response, {headers: {token}})
+          if(data.success){
+            loadCreditsData()
+            toast.success("Payment successful and Credits added")
+            navigate("/")
+          }
+        } catch (error) {
+          console.log(error)
+          toast.error(error.message)
+        }
       }
     }
     const rzp = new window.Razorpay(options)
