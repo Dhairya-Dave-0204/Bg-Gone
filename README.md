@@ -2,7 +2,7 @@
 Bg Gone is a Software-as-a-Service (SAAS) application that allows users to remove the background from images effortlessly. Built using the MERN (MongoDB, Express, React, Node.js) stack, this app provides a smooth and user-friendly experience. Every user is granted 5 free credits upon registration to explore the functionality. Additional credits can be purchased as needed to continue using the service.
 
 ## 🎥 Demo
-You can check out the live demo of the blog website here: [Deployed Blog Website](https://bg-gone-front.vercel.app/)
+You can check out the live demo of the blog website here: [Deployed Website](https://bg-gone-front.vercel.app)
 
 Feel free to explore, create an account, and start experimenting!
 
